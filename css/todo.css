@@ -1,0 +1,66 @@
+.left {
+    width: 65%;
+    float: left;
+    min-height: 100%;
+}
+.right {
+    width: 35%;
+    float: right;
+    background-color: #f6f6f6;
+    min-height: 100%;
+}
+#pending {
+    min-height: 100%;
+}
+.input-lg {
+    width: 100%;
+}
+.close {
+    color: white;
+    float:right;
+    padding:5px 5px;
+}
+.close:hover {
+    float:right;
+    padding:5px 5px;
+}
+h1 {
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    margin: 40px 30px 30px 30px;
+}
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+#container{
+    margin: 20px 20px 20px 20px;
+    min-height: 100%;
+    background-color: transparent;
+}
+
+.todo-task{
+    border-radius: 5px;
+    background-color: black;
+    width: 380px;
+    padding: 20px 20px 20px 20px;
+    margin: 20px 20px 20px 20px;
+    float: left;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+input[type="button"]{
+    width: 170px;
+    margin: 5px;
+}
+
+input[type="submit"]{
+    width: 170px;
+    margin: 5px;
+}

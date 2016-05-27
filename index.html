@@ -1,0 +1,73 @@
+<html>
+    <head>
+    	<!-- Adding meta files -->
+    	<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="author" content="Anirudh Goel">
+		<meta name="description" content="HackerEarth Front-End Engineer Test">
+
+        <title>To Do List</title>
+
+        <!-- Stylesheets and JQuery UI CSS -->
+        <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="lib/jQuery/jquery.ui.min.css" />
+        <link rel="stylesheet" href="css/todo.css" />
+    </head>
+
+    <!-- Function for random color of tasks -->
+    <body onload="ran_col()">
+        <div id="container">
+        	<hr>
+			<div class="left">
+				<h1>
+					<span style="color: blue;">
+						To Do
+					</span>
+				</h1>
+
+				<div class="row">
+					<form id="todo-form">
+						<div class="col-sm-9">
+							<input type="text" placeholder="Add Task" class="input-lg" />
+						</div>
+						<div class="col-sm-3">
+							<input type="submit" class="btn btn-success btn-lg" value="Add Task" onclick="todo.add();" />
+						</div>
+					</form>
+				</div>
+
+				<div class="row">
+					&nbsp;<input type="button" class="btn btn-warning btn-lg" value="Clear Data" onclick="todo.clear();" />
+				</div>
+
+				<div id="pending"></div>
+			</div>
+
+	        <div class="right" id="completed">
+                <h1>
+                	<span style="color: lightgreen;">
+	                	Done
+	                </span>
+                </h1>
+            </div>
+
+	        <!-- Adding scripts at end so that pages load faster -->
+	        <script type="text/javascript" src="lib/jQuery/jquery.min.js"></script>
+	        <script type="text/javascript" src="lib/jQuery/jquery.ui.min.js"></script>
+	        <script type="text/javascript" src="js/todo.js"></script>
+	   		<script type="text/javascript" src="js/ran_col.js"></script>
+	   		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+	   		<!-- Setting up and calling initialisation function -->
+	        <script type="text/javascript">
+	            $( "#datepicker" ).datepicker();
+	            $( "#datepicker" ).datepicker("option", "dateFormat", "dd/mm/yy");
+
+	            $(".task-container").droppable();
+	            $(".todo-task").draggable({ revert: "valid", revertDuration:200 });
+	            todo.init();
+	        </script>
+        </div>
+    </body>
+</html>
