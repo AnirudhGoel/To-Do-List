@@ -3,6 +3,10 @@ A completely front-end based To Do list made using JavaScript, jQuery and Browse
 
 - - -
 
+# Motivation
+
+Managing daily tasks can be hectic sometimes, so you could need a To Do List every now and then.
+
 
 
 # Features
