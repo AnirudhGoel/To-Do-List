@@ -1,5 +1,5 @@
 # To-Do-List
-A completely front-end based To Do list made using JavaScript and Browser Local Storage.
+A completely front-end based To Do list made using JavaScript, jQuery and Browser Local Storage.
 
 - - -
 
@@ -23,6 +23,8 @@ A completely front-end based To Do list made using JavaScript and Browser Local 
 
 ![Screenshot-1](/screenshots/Screenshot%201.png)
 
+
 ![Screenshot-2](/screenshots/Screenshot%202.png)
+
 
 ![Screenshot-1](/screenshots/Screenshot%203.png)
